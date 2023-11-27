@@ -1,0 +1,15 @@
+public class p12 {
+         public static int fact(int n) {
+            int num;
+            if (n == 0) {
+                return 1;
+            }
+            num = n * fact(n - 1);
+            return num;
+        }
+        public static void main(String[] args) {
+            int n = 5;
+            int num = fact(n);
+            System.out.println("factorial of " + n + " is " + num);
+        }
+}
